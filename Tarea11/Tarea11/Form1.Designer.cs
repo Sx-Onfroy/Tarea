@@ -28,12 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            textBox1 = new TextBox();
+            button1 = new Button();
+            label3 = new Label();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Sitka Banner", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(119, 146);
+            label1.Name = "label1";
+            label1.Size = new Size(79, 29);
+            label1.TabIndex = 0;
+            label1.Text = "Nombre";
+            label1.Click += label1_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(103, 187);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(139, 27);
+            textBox1.TabIndex = 2;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ActiveCaption;
+            button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(333, 146);
+            button1.Name = "button1";
+            button1.Size = new Size(282, 83);
+            button1.TabIndex = 4;
+            button1.Text = "Enter";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = SystemColors.ActiveBorder;
+            label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(271, 73);
+            label3.Name = "label3";
+            label3.Size = new Size(231, 25);
+            label3.TabIndex = 5;
+            label3.Text = "Formulario Ejemplo 1";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
+            ClientSize = new Size(800, 450);
+            Controls.Add(label3);
+            Controls.Add(button1);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Formulario Tarea 11";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox textBox1;
+        private Button button1;
+        private Label label3;
     }
 }
